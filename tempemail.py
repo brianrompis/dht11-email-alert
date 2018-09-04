@@ -2,7 +2,7 @@ import smtplib
 import time
 import Adafruit_DHT
 
-sensor = Adafruit_DHT.DHT11
+sensor = Adafruit_DHT.DHT22
 pin = 4
 
 smtpUser = 'server@astonmanado.com'
@@ -16,7 +16,6 @@ header = 'To: ' + ', '.join(toAdd) + '\n' + 'From: ' + fromAdd + '\n' + 'Subject
 
 while True:
 	humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
-	temperature = temperature - 2	#DHT11 inaccuracy
 	print 'Temp= {0:6.2f}*C  Humidity= {1:6.2f}%'.format(temperature, humidity)
 	
 	if temperature > 24.0:
