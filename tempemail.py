@@ -6,7 +6,7 @@ sensor = Adafruit_DHT.DHT11
 pin = 4
 
 smtpUser = 'server@astonmanado.com'
-smtpPass = '5tgb%TGB6yhn'
+smtpPass = 'password'
 
 toAdd = ['it@astonmanado.com', 'ce@astonmanado.com', 'brian.rompis@gmail.com']
 fromAdd = smtpUser
