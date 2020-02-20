@@ -1,7 +1,7 @@
 import smtplib
 
 smtpUser = 'brian.rompis@gmail.com'
-smtpPass = 'mymanado5566'
+smtpPass = 'password'
 
 toAdd = 'it@astonmanado.com'
 fromAdd = smtpUser
